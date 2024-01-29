@@ -6,10 +6,10 @@ public class reverse
         int reverse = 0;
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int number = sc.nextInt();
-        int num = number ;
+        int number = sc.nextInt();//storing at number
+        int num = number ;//storing number to num field
 
-
+        // reversing logic
         while(number !=0)
         {
             int r = number %10;
