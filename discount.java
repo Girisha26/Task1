@@ -6,13 +6,14 @@ public class discount {
     {
 
         int final_amount;
-        int discount;
+        double discount;
 
         Scanner sc= new Scanner(System.in);
 
         System.out.print("Enter purchase amount :");
-        int purchase_amount = sc.nextInt();
+        int purchase_amount = sc.nextInt();//getting input and storing at this feild 
 
+        //comparing purchase_amount to decide the discount 
         if(purchase_amount <=500)
         {
             System.out.println("No discount");
@@ -20,13 +21,13 @@ public class discount {
         else if (purchase_amount<=1000)
         {
             discount= purchase_amount * 10 / 100;
-            final_amount = purchase_amount - discount;
+            final_amount = (int)(purchase_amount - discount);// Cast to int
             System.out.println(final_amount);
         }
         else
         {
             discount= purchase_amount * 20 / 100;
-            final_amount = purchase_amount - discount;
+            final_amount = (int)(purchase_amount - discount);// Cast to int
             System.out.println(final_amount);
         }
 
